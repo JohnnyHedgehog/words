@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.game-area {
+    height: 95%;
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;   
+}
+
+
+
+.game-area__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.letter {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+   min-width: 50px;
+   min-height: 50px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left: 1%;
+}
+
+.letter:first-child{
+    margin-left: 0;
+}
+
+.input-area {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.game-input{
+    font-size: 30px;
+    display: block;
+    width: 85%;
+    text-transform: uppercase;
+    /* letter-spacing: 5px; */
+    border-radius: 5px;
+    border: 2px solid #1982c4;
+    font-family: 'Nunito', sans-serif;  
+
+}
+
+.button-area {
+    color: #fff;
+    width: 100%;
+}
+
+.button-reset {
+    text-align: center;
+    color: #fff;
+    width: 10%;
+    height: 50px;
+    font-size: 30px;
+    padding-left: 3px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background-color: #ff595e;
+    border-radius: 10px;
+    border: 1px solid #ff595e;
+    font-family: 'Nunito', sans-serif;
+}
+
+.button-submit{
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background-color: #1982c4;
+    border-radius: 10px;
+    border: 1px solid #1982c4;
+    font-family: 'Nunito', sans-serif;
+}
+
+.grey {
+    background-color: #777;
+}
+
+.yellow {
+    background-color: #ffca3a;
+}
+
+.green {
+    background-color: #8ac926;
+}
+
+
+
+.button-letters {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button-letter {
+    width: 25px;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+@media (max-device-height: 700px) {
+    h1 {
+        display: none;
+    }
+
+    .game-input{
+        font-size: 20px;   
+    }
+    .letter {
+        font-size: 40px;
+        line-height: 40px;      
+       min-width: 45px;
+       min-height: 40px;        
+    }
+
+    .button-reset {      
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .input-area {
+        margin-top: 10px;     
+    }
+
+    .button-letter {
+        width: 25px;
+        height: 30px;        
+    }    
+}
+
