@@ -22,6 +22,14 @@ const resetButton = document.querySelector('.button-reset');
 // подцепляем инпут, в который игрок вводит слово
 const input = document.querySelector('.game-input');
 
+// Запускаем проверку слова при нажатии кнопки ПРОВЕРИТЬ или Enter
+submitButton.onclick = checkWord;
+document.addEventListener('keydown', function (e) {
+    if (e.key == 'Enter') {
+        checkWord();
+    }
+})
+
 function checkWord() {
     // считываем фразу из инпута и приводим ее к массиву
     let userWord = document.querySelector('.game-input').value.split('');
@@ -112,10 +120,4 @@ resetButton.addEventListener('click', function (e) {
 
 })
 
-// Запускаем проверку слова при нажатии кнопки ПРОВЕРИТЬ или Enter
-submitButton.onclick = checkWord;
-document.addEventListener('keydown', function (e) {
-    if (e.key == 'Enter') {
-        checkWord();
-    }
-})
+

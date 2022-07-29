@@ -75,6 +75,7 @@ h1 {
 }
 
 .button-reset {
+    line-height: 49px;
     text-align: center;
     color: #fff;
     width: 10%;
@@ -89,6 +90,11 @@ h1 {
     font-family: 'Nunito', sans-serif;
 }
 
+.button-reset:hover {
+	cursor: pointer;
+    opacity: 0.85;
+}
+
 .button-submit{
     color: #fff;
     width: 100%;
@@ -100,6 +106,33 @@ h1 {
     border-radius: 10px;
     border: 1px solid #1982c4;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+
+.button-submit:hover {
+	cursor: pointer;
+    opacity: 0.85;
+}
+
+.button-letter {
+    line-height: 40px;
+    text-align: center;
+    width: 25px;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    background-color: #ddd;
+}
+
+.button-letter:hover {
+	cursor: pointer;
+    opacity: 0.8;
 }
 
 .grey {
@@ -127,19 +160,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-.button-letter {
-    width: 25px;
-    height: 40px;
-    border: 1px solid silver;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: black;
-}
 
-@media (max-device-height: 700px) {
+
+@media (max-device-height: 600px) {
     h1 {
         display: none;
     }
